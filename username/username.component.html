@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+  <div class="col-lg-4">
+    <div *ngFor="let x of users">
+      <a routerLink="/users/{{x.id}}">{{x.name}}</a>
+
+    </div>
+  </div>
+
+  <div class="col-lg-8">
+    <router-outlet></router-outlet>
+  </div>
+
+  </div>
+
+</div>
